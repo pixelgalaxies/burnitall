@@ -1,0 +1,139 @@
+/* STYLESHEET FOR FIRE QUOTE GENERATOR */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Muli', sans-serif;
+}
+
+input[type='button'] {
+	outline: none;
+}
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url("images/fire0.jpg");
+	/* Background image is centered vertically and horizontally at all times */
+	background-position: center center;
+	/* Background image doesn't tile */
+	background-repeat: no-repeat;
+	/* Background image is fixed in the viewport so that it doesn't move when 
+	the content's height is greater than the image's height */
+	background-attachment: fixed;
+	/* This is what makes the background image rescale based on the container's size */
+	background-size: cover;
+	/* Set a background color that will be displayed
+	while the background image is loading */
+	background-color: #191919;
+}
+
+a {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+#portfolio {
+	color: #f2b999;
+}
+
+
+#container {
+	color: #fafafa;
+	min-height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+@media (min-width: 300px) {
+	#quoteText {
+		font-size: 2rem;
+		padding: 0 30px 20px 30px;
+	}
+
+	#sourceText {
+		font-size: 1rem;
+	}
+
+	#newButton {
+		background-color: transparent;
+		border: #ffffff solid 1px;
+		font-size: .5rem;
+		border-radius: 5px;
+		padding: .5rem;
+		color: #fff;
+		margin-top: 50px;
+	}
+	
+	#transparent-bg {
+	background-color: #7f7f7f;
+	background-color: rgba(0,0,0,0.7);
+	padding: 30px 0px;	
+	width: 100%;
+	}
+}
+
+@media (min-width: 600px) {
+	
+	#quoteText {
+		font-size: 2.5rem;
+		padding: 0 60px 20px 60px;
+	}
+	
+	#sourceText {
+		font-size: 1.5rem;
+	}
+
+	#newButton {
+		font-size: .7rem;
+		padding: .7rem;
+	}
+}
+
+@media (min-width: 800px) {
+	#quoteText {
+		font-size: 3rem;
+		padding: 0 90px 20px 90px;
+	}
+	
+	#sourceText {
+		font-size: 2rem;
+	}
+
+	#newButton {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}
+
+@media (min-width: 800px) {
+	#quoteText {
+		font-size: 3.5rem;
+		padding: 0 120px 20px 120px;
+	}
+	
+	#sourceText {
+		font-size: 2rem;
+	}
+
+	#newButton {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}
+
+footer {
+	text-align: center;
+	color: #fafafa;
+	font-size: 1rem;
+	background-color: #060606;
+	padding: 2rem;
+}
