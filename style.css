@@ -10,7 +10,6 @@ input[type='button'] {
 	outline: none;
 }
 
-
 html, body {
 	height: 100%;
 }
@@ -32,14 +31,8 @@ body {
 }
 
 a {
-	color: #fafafa;
-	text-decoration: none;
-}
-
-#portfolio {
 	color: #f2b999;
 }
-
 
 #container {
 	color: #fafafa;
@@ -48,10 +41,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
 }
-
-
 
 @media (min-width: 300px) {
 	#quoteText {
