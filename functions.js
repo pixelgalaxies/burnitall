@@ -47,19 +47,23 @@ quotes[14] = {
 quotes[15] = {
 	quote: "I crashed my car into the bridge. I watched, I let it burn.",
 	source: "-Icona Pop, I Love It, 2012"
-}
+};
 quotes[16] = {
 	quote: "Say goodbye as I'm walking on a wire. Close your eyes, you can leave me in the fire.",
 	source: "-Felix Cartal & Clockwork, The Fire, 2013"
-}
+};
 quotes[17] = {
 	quote: "Through the fire and flames we carry on!",
 	source: "-Dragonforce, Through the Fire and Flames, 2005"
-}
+};
 quotes[18] = {
 	quote: "Under the bright but faded lights you set my heart on fire.",
 	source: "-Alan Walker, Faded, 2015"
-}
+};
+quotes[19] = {
+	quote:"I put my hands among the flames. Nothing burns.",
+	source: "-Sylvia Plath, Poppies In July, 1962"
+};
 
 var num = 0;
 var imgNum = 0;
