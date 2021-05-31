@@ -12,8 +12,8 @@ quotes[2] = {
 	source: "-Adele, 21, 2007"
 };
 quotes[3] = {
-	quote: "Honey, I'm on fire, I feel it everywhere. Nothing scares me anymore.",
-	source: "-Lana Delray, Summertime Sadness, 2012"
+	quote: "I found my hate in the flames.",
+	source: "-Gangplank, League of Legends, 2015"
 };
 quotes[4] = {
 	quote: "So when you fall, I’ll take my turn and fan the flames as your blazes burn.",
@@ -48,20 +48,20 @@ quotes[11] = {
 	source: "-Suzanne Collins, Mockingjay, 2010"
 };
 quotes[12] = {
-	quote: "Under the bright but faded lights you set my heart on fire.",
-	source: "-Alan Walker, Faded, 2015"
+	quote: "Neither the flames nor the depths could claim me.",
+	source: "-Gangplank, League of Legends, 2015"
 };
 quotes[13] = {
-	quote: "I put my hands among the flames. Nothing burns.",
-	source: "-Sylvia Plath, Poppies In July, 1962"
+	quote: "Ready to set the world on fire?",
+	source: "-Brand, League of Legends, 2011"
 };
 quotes[14] = {
 	quote: "Burn  everything you love then burn the ashes.",
 	source: "-Fall Out Boy, My Songs Know What You Did In The Dark, 2013"
 };
 quotes[15] = {
-	quote: "Put on your shades cause I'll be dancing in the flames tonight.",
-	source: "-Lady Gaga, The Edge of Glory, 2011"
+	quote: "I crashed my car into the bridge. I watched, I let it burn.",
+	source: "-Icona Pop, I Love It, 2012"
 };
 quotes[16] = {
 	quote: "Say goodbye as I'm walking on a wire. Close your eyes, you can leave me in the fire.",
@@ -71,11 +71,25 @@ quotes[17] = {
 	quote: "Through the fire and flames we carry on!",
 	source: "-Dragonforce, Through the Fire and Flames, 2005"
 };
+quotes[18] = {
+	quote: "Under the bright but faded lights you set my heart on fire.",
+	source: "-Alan Walker, Faded, 2015"
+};
+quotes[19] = {
+	quote: "I put my hands among the flames. Nothing burns.",
+	source: "-Sylvia Plath, Poppies In July, 1962"
+};
+quotes[20] = {
+	quote: "Honey, I'm on fire, I feel it everywhere. Nothing scares me anymore.",
+	source: "-Lana Delray, Summertime Sadness, 2012"
+};
 
 var num = 0;
 var imgNum = 0;
 var quoteText = document.getElementById("quoteText");
 var sourceText = document.getElementById("sourceText");
+var dBody = document.body;
+var images = ["images/fire0.jpg", "images/fire1.jpg", "images/fire2.jpg", "images/fire3.jpg", "images/fire4.jpg", "images/fire5.jpg", "images/fire6.jpg"];
 
 function quoteClick() {
 	//generates random number based on quotes array
@@ -84,4 +98,8 @@ function quoteClick() {
 	quoteText.innerHTML = '"' + quotes[num].quote + '"';
 	//sets source using random number generated
 	sourceText.innerHTML = quotes[num].source;
+	//generates a random number based on images array
+	imgNum = Math.floor(Math.random() * images.length);
+	//sets bg image using random number generated
+	dBody.style.backgroundImage = "url(" + images[imgNum] + ")";
 }
